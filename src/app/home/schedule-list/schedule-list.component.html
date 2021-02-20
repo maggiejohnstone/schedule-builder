@@ -1,4 +1,5 @@
 <p>schedule-list works!</p>
-<ng-container *ngFor="let item of scheduleListItems">
+<app-schedule-list-item name="New Schedule"></app-schedule-list-item>
+<ng-container *ngFor="let item of scheduleListItems" class="schedule-list">
   <app-schedule-list-item name="{{item.name}}"></app-schedule-list-item>
 </ng-container>

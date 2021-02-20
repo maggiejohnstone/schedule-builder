@@ -9,3 +9,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-card {
+  border-width: 2px;
+  background-color: white;
+  margin: 10px 0;
+  text-align: left;
+  box-shadow: 0 2px 5px black;
+}
