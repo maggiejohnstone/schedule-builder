@@ -1,5 +1,4 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {HomeService} from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +7,10 @@ import {HomeService} from './home.service';
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
-  constructor(private homeService: HomeService) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.homeService.sayHello();
   }
 
   ngOnDestroy(): void {
