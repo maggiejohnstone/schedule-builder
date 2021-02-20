@@ -10,6 +10,7 @@ import {ScheduleListComponent} from './home/schedule-list/schedule-list.componen
 import {ScheduleListItemComponent} from './home/schedule-list/schedule-list-item/schedule-list-item.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {MatCardModule} from '@angular/material/card';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

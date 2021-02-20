@@ -1,3 +1,16 @@
 mat-card {
-
+  background-color: white;
+  color: #333333;
+  cursor: pointer;
+  mat-card-title {
+    margin: 0;
+    font-size: 18px;
+  }
 }
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+}
+
