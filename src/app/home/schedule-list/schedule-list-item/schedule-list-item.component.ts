@@ -9,9 +9,11 @@ import { Router } from '@angular/router';
 export class ScheduleListItemComponent implements OnInit {
 
   @Input() name: string;
+  @Input() id: string;
 
   constructor() {
     this.name = '';
+    this.id = '';
   }
 
   ngOnInit(): void {

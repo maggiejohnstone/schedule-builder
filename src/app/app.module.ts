@@ -11,6 +11,7 @@ import {ScheduleListItemComponent} from './home/schedule-list/schedule-list-item
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import { ClassListComponent } from './schedule/class-list/class-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatIconModule} from '@angular/material/icon';
     TopbarComponent,
     ScheduleComponent,
     ScheduleListComponent,
-    ScheduleListItemComponent
+    ScheduleListItemComponent,
+    ClassListComponent
   ],
   imports: [
     BrowserModule,

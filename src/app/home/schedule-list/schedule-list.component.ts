@@ -13,16 +13,22 @@ export class ScheduleListComponent implements OnInit {
 
   constructor(private router: Router) {
     this.scheduleListItems = [
-      {name: 'CMPT141'},
-      {name: 'CMPT145'},
+      {
+        name: 'CMPT141',
+        id: '123',
+      },
+      {
+        name: 'CMPT145',
+        id: '456'
+      },
     ];
   }
 
   ngOnInit(): void {
   }
 
-  redirectToSchedule(): void {
-    this.router.navigate(['schedule']).then();
+  redirectToSchedule(id: string): void {
+    this.router.navigate([`schedule/${id}`]).then();
   }
 
 }
