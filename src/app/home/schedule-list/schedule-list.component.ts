@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ScheduleListItem} from './schedule-list-item/schedule-list-item.interface';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-schedule-list',
@@ -10,7 +11,7 @@ export class ScheduleListComponent implements OnInit {
 
   scheduleListItems: ScheduleListItem[];
 
-  constructor() {
+  constructor(private router: Router) {
     this.scheduleListItems = [
       {name: 'CMPT141'},
       {name: 'CMPT145'},
@@ -18,6 +19,10 @@ export class ScheduleListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  redirectToSchedule(): void {
+    this.router.navigate(['schedule']).then();
   }
 
 }
