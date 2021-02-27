@@ -12,6 +12,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { ClassListComponent } from './schedule/class-list/class-list.component';
+import { ClassComponent } from './schedule/class-list/class/class.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ClassListComponent } from './schedule/class-list/class-list.component';
     ScheduleComponent,
     ScheduleListComponent,
     ScheduleListItemComponent,
-    ClassListComponent
+    ClassListComponent,
+    ClassComponent
   ],
   imports: [
     BrowserModule,
