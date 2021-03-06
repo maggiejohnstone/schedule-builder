@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { ClassListComponent } from './schedule/class-list/class-list.component';
 import { ClassComponent } from './schedule/class-list/class/class.component';
+import { WeekComponent } from './schedule/week/week.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ClassComponent } from './schedule/class-list/class/class.component';
     ScheduleListComponent,
     ScheduleListItemComponent,
     ClassListComponent,
-    ClassComponent
+    ClassComponent,
+    WeekComponent
   ],
   imports: [
     BrowserModule,

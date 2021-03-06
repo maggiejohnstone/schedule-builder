@@ -1,1 +1,7 @@
-<p>class-list works!</p>
+<ng-container *ngFor="let item of classListItems" class="schedule-list">
+  <app-class
+    name="{{item.name}}"
+    id="{{item.id}}"
+  >
+  </app-class>
+</ng-container>

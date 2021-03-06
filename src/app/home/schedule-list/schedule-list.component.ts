@@ -14,11 +14,11 @@ export class ScheduleListComponent implements OnInit {
   constructor(private router: Router) {
     this.scheduleListItems = [
       {
-        name: 'CMPT141',
+        name: 'Fall 2020',
         id: '123',
       },
       {
-        name: 'CMPT145',
+        name: 'Winter 2021',
         id: '456'
       },
     ];

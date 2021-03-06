@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ClassItem} from './class/class.interface';
 
 @Component({
   selector: 'app-class-list',
@@ -7,7 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassListComponent implements OnInit {
 
-  constructor() { }
+  classListItems: ClassItem[];
+
+  constructor() {
+    this.classListItems = [
+      {
+        name: 'CMPT141',
+        id: '123',
+      },
+      {
+        name: 'CMPT145',
+        id: '456'
+      },
+    ];
+  }
+
 
   ngOnInit(): void {
   }
